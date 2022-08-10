@@ -16,6 +16,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [Zod]()
 - [Styled Components]()
 - [Vite]()
+- [Date fns]()
+- [Phosphor Icons]()
+- [React Router DOM]()
 
 ## 💻 Pré-requisitos
 
