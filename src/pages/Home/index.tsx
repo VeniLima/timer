@@ -23,7 +23,6 @@ const newCycleValidationSchema = zod.object({
 });
 
 // gerando a tipagem automaticamente da variavel newCycleValidationSchema
-type newCycleFormData = zod.infer<typeof newCycleValidationSchema>;
 
 export function Home() {
   const { activeCycle, createNewCycle, interruptCycle } =
@@ -36,15 +35,20 @@ export function Home() {
       minutesAmount: 0,
     },
   });
-
-  const { handleSubmit, watch /* reset */ } = newCycleForm;
+  type newCycleFormData = zod.infer<typeof newCycleValidationSchema>;
+  const { handleSubmit, watch, reset } = newCycleForm;
 
   const task = watch("task");
   const isSubmitDisabled = !task;
 
+  function handleCreateNewCycle(data: newCycleFormData) {
+    createNewCycle(data);
+    reset();
+  }
+
   return (
     <HomeContainer>
-      <form onSubmit={handleSubmit(createNewCycle)}>
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
         <FormProvider {...newCycleForm}>
           <NewCycleForm />
         </FormProvider>
