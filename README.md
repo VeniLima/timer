@@ -12,13 +12,14 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ## Tecnologias utilizadas
 
-- [React Hook Forms]()
-- [Zod]()
-- [Styled Components]()
-- [Vite]()
-- [Date fns]()
-- [Phosphor Icons]()
-- [React Router DOM]()
+- [React Hook Forms](https://www.npmjs.com/package/react-hook-form)
+- [Zod](https://www.npmjs.com/package/zod)
+- [Styled Components](https://www.npmjs.com/package/styled-components)
+- [Vite](https://vitejs.dev/)
+- [Date fns](https://www.npmjs.com/package/date-fns)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+- [Immer](https://www.npmjs.com/package/immer)
 
 ## 💻 Pré-requisitos
 
